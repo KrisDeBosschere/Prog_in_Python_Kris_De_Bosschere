@@ -1,21 +1,25 @@
-import Prog_in_Python_Kris_De_Bosschere.domain.vsoa
-import Prog_in_Python_Kris_De_Bosschere.domain.medewerker
-import Prog_in_Python_Kris_De_Bosschere.settings
+import sqlite3
+
+# Import from the root of the project
+from domain import vsoa
+from domain import medewerker
+import settings
 
 
 def get_all_dossiers():
-	# SQL statements
-	# lijst van dossierobjecten teruggeven
+	with sqlite3.connect("project.db") as dbconnectie:
+		resultaat = dbconnectie.execute("SELECT id, lid, type, verantwoordelijke FROM dossier")
+		print(resultaat.fetchall())
 
-def get_one_dossier():
+# def get_one_dossier():
 	# 1 specifiek dossier per naam
 
-def get_medewerkers():
+# def get_medewerkers():
 	# alle medewerkers opvragen
 
-def set_medewerkers():
+# def set_medewerkers():
 	# medewerker toevoegen
 
-def set_dossier():
+# def set_dossier():
 	# dossier toevoegen
 
