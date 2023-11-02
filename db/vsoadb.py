@@ -11,9 +11,6 @@ def get_all_dossiers():
 		resultaat = dbconnectie.execute("SELECT id, lid, type, verantwoordelijke FROM dossier")
 		print(resultaat.fetchall())
 
-# def get_one_dossier():
-	# 1 specifiek dossier per naam
-
 # def get_medewerkers():
 	# alle medewerkers opvragen
 
