@@ -1,1 +1,21 @@
+# gecompileerde bestanden of mappen waar we die terugvinden
+__pycache__/
+*.py[cod]
+*$py.class
 
+# C extensions
+*.so
+
+# database
+dbproject.sqlite3
+project.db
+
+# instellingsbestanden
+settings.py
+.env
+
+# verborgen map van de virtuele omgeving
+.env
+.venv
+env/
+venv/

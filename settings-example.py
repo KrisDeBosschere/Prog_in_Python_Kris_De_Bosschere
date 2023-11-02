@@ -1,0 +1,1 @@
+DATABASE=<pad naar sqlite3-database>
