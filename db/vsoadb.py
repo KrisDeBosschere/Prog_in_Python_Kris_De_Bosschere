@@ -1,7 +1,7 @@
 import sqlite3
 
 # Import from the root of the project
-from domain import vsoa
+from domain import dossier
 from domain import medewerker
 import settings
 
